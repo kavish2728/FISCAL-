@@ -27,10 +27,12 @@ jobs:
 
       - name: Prepare web files
         run: |
-          mkdir -p www
-          cp index.html app.js style.css www/
+          mkdir -p www/app
+          cp index.html www/index.html
+          cp app.js www/app/app.js
+          cp style.css www/app/style.css
 
-      - name: Add Android platform if missing
+      - name: Add Android platform
         run: |
           if [ ! -d android ]; then
             npx cap add android
