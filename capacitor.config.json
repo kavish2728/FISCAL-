@@ -1,8 +1,6 @@
 {
-  "appId": "com.fiscalfable.internal",
+  "appId": "com.fiscalfable.cfo",
   "appName": "Fiscal Fable CFO",
-  "webDir": ".",
-  "server": {
-    "androidScheme": "https"
-  }
+  "webDir": "www",
+  "bundledWebRuntime": false
 }
